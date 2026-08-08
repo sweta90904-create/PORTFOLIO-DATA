@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Humse Sampark Karein</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: lightseagreen;
+            color: #333;
+            line-height: 1.6;
+            background-color: lightblue;
+        }
+
+        /* Hero Banner */
+        .hero {
+            background: linear-gradient(135deg, #4f46e5, #06b6d4);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+         #ind {
+    background-color: lightcoral;
+    font-size: 20px;
+}
+
+
+
+
+#ab {
+    background-color: lightgray;
+    font-size: 20px;
+}
+
+
+
+#project{
+    background-color: lightpink;
+    font-size: 20px;
+}
+
+
+
+#contact{
+    background-color: lightseagreen;
+    
+}
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Contact Layout */
+        .contact-box {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        /* Info Side */
+        .contact-info {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .contact-info h2 {
+            color: #1e293b;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .contact-info p {
+            color: #64748b;
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            margin-bottom: 15px;
+            color: #475569;
+        }
+
+        .info-item strong {
+            color: #4f46e5;
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        /* Form Side */
+        .contact-form {
+            flex: 1.5;
+            min-width: 280px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #475569;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #4f46e5;
+        }
+
+        .btn-submit {
+            background: #4f46e5;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            width: 100%;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .btn-submit:hover {
+            background: #4338ca;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e293b;
+            color: white;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Humse Sampark Karein</h1>
+        <p>Koi bhi sawal ho ya madad chahiye? Humein message karein!</p>
+    </section>
+
+<section id="red-box">
+<nav class="navi">
+<a href="index.html" id="ind">HOME&nbsp;&nbsp;</a>
+<A href="about.html" id="ab">ABOUT&nbsp;&nbsp;&nbsp;</A>
+<A href="contact us.html" id="contact">CONTACT US&nbsp;&nbsp;&nbsp;</A>
+<A href="project.html" id="project">PROJECT PORTFOLIO&nbsp;&nbsp;&nbsp;</A>
+
+
+</nav>
+</section>    
+
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="contact-box">
+            
+            <!-- Direct Info -->
+            <div class="contact-info">
+                <h2>Jankari</h2>
+                <p>Aap humein direct call ya email bhi kar sakte hain.</p>
+
+                <div class="info-item">
+                    <strong>📧 Email:</strong>
+                    info@example.com
+                </div>
+
+                <div class="info-item">
+                    <strong>📞 Phone:</strong>
+                    +91 98765 43210
+                </div>
+
+                <div class="info-item">
+                    <strong>📍 Pata:</strong>
+                    Noida, Uttar Pradesh, India
+                </div>
+            </div>
+
+            <!-- Form -->
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Aapka Naam</label>
+                    <input type="text" id="name" name="name" placeholder="Naam likhein" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Aapka Email</label>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Sandesh (Message)</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Apna message yahan likhein..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Message Bhejein</button>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Hamari Company. Sabhi adhikar surakshit hain.</p>
+    </footer>
+
+</body>
+</html>
